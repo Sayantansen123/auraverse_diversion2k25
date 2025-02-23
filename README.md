@@ -1,6 +1,7 @@
 # Auraverse Diversion 2K25
 
 Welcome to the Auraverse Diversion 2K25 project! This repository houses the codebase for our innovative application, blending cutting-edge AI technologies with a user-friendly interface.
+The web application is a gamified platform that rewards you for your social tasks awarding you credits which can be exchanged for crypto.
 
 ## Project Structure
 
