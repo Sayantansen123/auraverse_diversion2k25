@@ -38,12 +38,12 @@ const UserProfile = () => {
       {/* Sidebar */}
       <div className="w-64 p-12 max-md:hidden ">
         <h2 className="text-2xl mt-2.5 font-bold mb-6">Dashboard</h2>
-        <ul className="space-y-4">
-          <li className="hover:text-purple-400 cursor-pointer">Profile</li>
-          <li className="hover:text-purple-400 cursor-pointer">Tasks</li>
-          <li className="hover:text-purple-400 cursor-pointer">Leaderboard</li>
-          <li className="hover:text-purple-400 cursor-pointer">Home</li>
-          <ConnectButton client={client} />;
+        <ul className="space-y-4 flex flex-col gap-2">
+          <a href="/dashboard"><li className="hover:text-purple-400 cursor-pointer">Profile</li></a>
+          <a href="/Task"><li className="hover:text-purple-400 cursor-pointer">Tasks</li></a>
+          <a href="/leaderboard"><li className="hover:text-purple-400 cursor-pointer">Leaderboard</li></a>
+          <a href="/"><li className="hover:text-purple-400 cursor-pointer">Home</li></a> 
+          <ConnectButton client={client} />
         </ul>
       </div>
 
