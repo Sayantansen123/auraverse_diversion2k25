@@ -50,7 +50,7 @@ To set up the project locally:
    - For frontend:
      ```bash
      cd ../frontend
-     npm start
+     npm run dev
      ```
 
 ## Contributing
