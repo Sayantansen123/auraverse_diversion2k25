@@ -294,9 +294,9 @@ const Leaderboard = () => {
         </div>
 
         <LeaderboardTable users={users} />
-        <div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
-</div>
+        
+  
+
         {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

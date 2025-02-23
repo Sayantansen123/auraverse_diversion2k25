@@ -39,7 +39,7 @@ const Leader = () => {
         <p className="text-center text-sm text-gray-400 mt-4">🔗 Compete for the top spot & earn rewards!</p>
       </div>
       <div style={{ height: '600px', position: 'relative' }}>
-    <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
+    
   </div>
     </div>
 

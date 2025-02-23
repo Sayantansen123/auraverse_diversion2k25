@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import {motion} from "framer-motion"
 import { useAuth } from '../authcontext/authcontext';
-
+import { ConnectButton } from "thirdweb/react";
+import { createThirdwebClient } from "thirdweb";
 import { Particles } from '../Components/Particles';
 
+const client = createThirdwebClient({ clientId: "df6f2ed69cb11c0084d94a585fd257c8" });
 
 const UserProfile = () => {
 
@@ -13,9 +15,10 @@ const UserProfile = () => {
     avatar: "https://i.pravatar.cc/150?img=3",
     rank: authUser.rank,
     tasksCompleted: 32,
-    points: 1200,
+    points: authUser.points,
     email: authUser.email,
   });
+  
 
   return (
     <div className='relative'>
@@ -40,6 +43,7 @@ const UserProfile = () => {
           <li className="hover:text-purple-400 cursor-pointer">Tasks</li>
           <li className="hover:text-purple-400 cursor-pointer">Leaderboard</li>
           <li className="hover:text-purple-400 cursor-pointer">Home</li>
+          <ConnectButton client={client} />;
         </ul>
       </div>
 

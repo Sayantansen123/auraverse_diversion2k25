@@ -207,7 +207,7 @@ class Media {
       transparent: true
     })
     const img = new Image()
-    img.crossOrigin = "anonymous"
+   
     img.src = this.image
     img.onload = () => {
       texture.image = img
@@ -328,11 +328,11 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Bridge' },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'Desk Setup' },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Waterfall' },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Strawberries' },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Deep Diving' },
+      { image: "/public/gold.jpeg", text: 'Bridge' },
+      { image: `/bronze.jpg`, text: 'Desk Setup' },
+      { image: `/silver.jpg`, text: 'Waterfall' },
+      { image: `/plat.jpg`, text: 'Strawberries' },
+      { image: `/infinity.jpg`, text: 'Deep Diving' },
       { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Train Track' },
       { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
       { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
