@@ -70,8 +70,4 @@ We welcome contributions from the community! To contribute:
    ```
 5. Open a pull request detailing your changes.
 
-## License
 
-This project is licensed under the MIT License. For more details, refer to the `LICENSE` file in the repository.
-
----
