@@ -11,11 +11,13 @@ import Leaderboard from "./pages/Leaderboard"
 import { AuthContextProvider } from "./authcontext/authcontext";
 import SubmitTask from "./pages/SubmitTask";
 import { VerifyUser } from "./utils/verifyUser";
+import { ThirdwebProvider } from "thirdweb/react";
 
 
 function App() {
   return (
     <>
+    <ThirdwebProvider>
       <AuthContextProvider>
         <ToastContainer />
         <Router>
@@ -46,6 +48,7 @@ function App() {
           </Routes>
         </Router>
       </AuthContextProvider>
+      </ThirdwebProvider>
     </>
   );
 }

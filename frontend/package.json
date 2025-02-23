@@ -22,6 +22,7 @@
     "react-just-parallax": "^3.1.16",
     "react-router-dom": "^7.1.5",
     "react-toastify": "^11.0.3",
+    "thirdweb": "^5.88.7",
     "three": "^0.173.0"
   },
   "devDependencies": {

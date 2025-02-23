@@ -45,7 +45,7 @@ const Home = () => {
       <ButtonGradient />
 
       <Leader/>
-      <Footer/>
+      
     </>
   );
 };
